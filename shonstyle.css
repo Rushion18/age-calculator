@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.bigboy .birthdate {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.bigboy .birthdate div {
+    margin: 0 5px;
+}
+.bigboy .birthdate label{
+    display: block;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+.bigboy .birthdate input {
+    padding: 10px;
+    width: 100%;
+    height: 5vh;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+.bigboy .birthdate input::placeholder {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bigboy button {
+    background-color: hsl(259, 100%, 65%);
+    padding: 12px;
+    cursor: pointer;
+    float: right;
+    border-radius: 50%;
+}
+.bigboy .birthdate-output {
+    margin: 70px 0 0 80px;
+
+}
+.bigboy .birthdate-output h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 0px;
+}
+.bigboy .birthdate-output h1 span {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (max-width : 600px){
+    body .bigboy {
+        overflow: hidden;
+    }
+    .bigboy button {
+        float: none;
+        margin: 0px;
+        margin-left: 40%;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+    .bigboy .birthdate-output h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0px;
+    }
+}
